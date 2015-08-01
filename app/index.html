@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" ng-app="SexEdApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sia - Know About It</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+  <!-- Shared Navigation Bar -->
+  <nav id="sharedNav" class="navbar navbar-default navbar-fixed-top">
+    <div id="sharedNavContainer" class="container-fluid">
+      <!-- Group toggle and brand for mobile display (resize browser window to see effect) -->
+      <!-- Navigation Bar: Header -->
+      <div class="navbar-header">
+        <!-- Toggle Button -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sharedNavCollapse" aria-expanded="false">
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <!-- Brand -->
+        <a id="sharedNavBrandAnchor" class="navbar-brand" href="#/home">
+          <img id="sharedNavBrand" src="img/abstractLogo.jpg" alt="Brand">
+        </a>
+      </div>
+      <!-- Navigation Bar: Main -->
+      <div id="sharedNavCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#/safer-sex/">Safer Sex</a></li>
+          <li><a href="#/consent/">Consent</a></li>
+          <li><a href="#/sexuality/">Sexuality</a></li>
+          <li><a href="#/option/">Option</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Placeholder of Individual Page's Content -->
+  <div ng-view="">
+  </div>
+</body>
+
+<!-- AngularJS and Angular-Route -->
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-route/angular-route.js"></script>
+<!-- jQuery -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Angular Scroll and Angular Parallax -->
+<script src="../bower_components/angular-scroll/angular-scroll.min.js"></script>
+<script src="../bower_components/ng-parallax/angular-parallax.min.js"></script>
+<!-- Chart -->
+<script src="../bower_components/angular-google-chart/ng-google-chart.js"></script>
+<!-- Local scripts -->
+<script src="js/app.js"></script>
+<!-- Controllers -->
+<script src="js/controllers/HomeCtrl.js"></script>
+<script src="js/controllers/SaferSexCtrl.js"></script>
+<script src="js/controllers/ConsentCtrl.js"></script>
+<script src="js/controllers/SexualityCtrl.js"></script>
+<script src="js/controllers/OptionCtrl.js"></script>
+<script src="js/services.js"></script>
+<script src="js/filters.js"></script>
+
+</html>
