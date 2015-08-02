@@ -1,0 +1,25 @@
+<div id="talk-intro">
+	<h1>SHARE YOUR STORIES</h1>
+	<p>
+		"You can fix anything but a blank page." 
+	</p>
+	<p id="author">Nora Roberts</p>
+</div>
+
+<div class="container">
+	<form class="input-box">
+	  <textarea rows="7" cols="100" ng-model="input" placeholder="Tell your stories"></textarea> 
+	</form>
+
+	<div class="submit">
+	  <button id="submit-btn" type="reset" ng-click="addStory(input)" ng-disabled="!input">Share</button>
+	</div>
+	
+	<div class="story-area">
+		<ul>
+			<li ng-repeat="story in stories">
+				<span>{{story.text}}</span>
+			</li>
+		</ul>
+	</div>
+</div>

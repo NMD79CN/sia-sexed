@@ -64,7 +64,7 @@
       </div>
     </div><!-- end of row -->
   <!-- DROPDOWN   -->
-  <div class="dropdown">
+<!--   <div class="dropdown">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       Chọn tỉnh thành
       <span class="caret"></span>
@@ -74,55 +74,118 @@
         <a>{{province}}</a>
       </li>
     </ul>
-  </div>  
+  </div>  --> 
+ 
   <!-- SCENARIO -->
-  <h2>Scenarios</h2>
-  <!-- 1st row verticaly centered text in the square columns -->
-  <div class="square">
-    <div class="content">
-      SCENARIO HERE
-    </div>
+  <div id="safe-sex-wrapper">
+    <h2>Scenarios</h2>
+    <ul id="index_cards" ng-init="tab = 0">
+      <li id="card-1" ng-class="{active:tab===1}">
+        <a class="show-popup" ng-click="tab = 1"><h4>Preparing yourself</h4> </a>
+        <img src="./img/safe-sex/prom.jpg" height="146" width="̀130px" alt="SafeSex" />
+        <p> Hi I’m Xavier. Tonight is my prom night and my date, Daniel, and I might have sex tonight. What do I need to keep in mind before having sex?
+        </p>
+      </li>
+      <li id="card-2" ng-class="{active:tab===2}">
+        <a class="show-popup" ng-click="tab = 2"><h4>Protection Devices</h4></a>
+        <img src="./img/safe-sex/pregnant.jpg" height="140" width="130" alt="SafeSex" />
+        <p>  Tonight is an important night. It’s our 2 months anniversary and we are going to have sex … I’m worried, how should I prepare myself so that I won’t get pregnant?
+          </p>
+      </li>
+      <li id="card-3" ng-class="{active:tab===3}">
+        <a class="show-popup" ng-click="tab = 3"><h4>STD Symptoms</h4></a>
+        <img src="./img/safe-sex/doubt.jpg" height="137" width="145" alt="SafeSex" />
+        <p> Hi Doctor, I’m Ellen. I think I got an STD. Can you tell me what the usual symptoms of STDs are?
+        </p>
+      </li>
+        <li id="card-4" ng-class="{active:tab===4}">
+        <a class="show-popup" ng-click="tab = 1"><h4>STD Treatment</h4> </a>
+        <img src="./img/safe-sex/std.jpg" height="146" width="130" alt="SafeSex"/>
+        <p>  Doctor, this is me, Allison and my friend Bob. We just got the results back-  we both have an STD!! Where should I get my treatment?
+        </p>
+      </li>
+        <li id="card-5" ng-class="{active:tab===5}">
+        <a class="show-popup" ng-click="tab = 1"><h4>STD Tranmission </h4> </a>
+        <img src="./img/safe-sex/transmission.jpg" height="146" width="130" alt="SafeSex" />
+        <p>  Hi, I’m Alyssa. I just found out I have STD (Nooo!!!). What should I do so that my family/ friends don’t get STD from me?
+        </p>
+      </li>
+        <li id="card-6" ng-class="{active:tab===6}">
+        <a class="show-popup" ng-click="tab = 1"><h4>Safe Sex </h4> </a>
+        <img src="./img/safe-sex/safesex.jpg" height="146" width="130" alt="SafeSex" />
+        <p> Hi doctor, I’m Taylor. I just met a really cool guy yesterday at a party, and our relationship is progressing. One problem, I have STD, but I don’t want him to get it from me. How can we do it safely?
+        </p>
+      </li>
+          <li id="card-7" ng-class="{active:tab===7}">
+        <a class="show-popup" ng-click="tab = 1"><h4>What now? </h4> </a>
+        <img src="./img/safe-sex/drunk.jpg" height="146" width="130px" alt="SafeSex" />
+        <p>  I’m Tristine. I went to the bar last night, got drunk, and  woke up this morning seeing a stranger in my bed. Apparently we had sex without using any protection devices. I don’t know if he has any sexually transmitted diseases or not. What should I do now?
+        </p>
+      </li>
+    </ul>
   </div>
-  <div class="square">
-    <div class="content numbers">
-      98% OF BLABLABLA SCENARIO
-    </div>
+
+  <div class="overlay-content" ng-show="tab === 1">
+    <p>
+      <h4> Q: </h4> Hi I’m Xavier. Tonight is my prom night and my date, Daniel, and I might have sex tonight. What do I need to keep in mind before having sex?
+    </p>
+    <p>
+      <h4> A: </h4> Before having sex, ask your partner if they currently have an STD. You should know if you have an STD yourself to that you can also protect your partner’s health. If either person is unsure, the best way to be safe is to always wear a condom. You need to be especially careful in your case because in sexual activities between males and males (anal sex), there are higher chances of transmission of sexual diseases because the digestive tracts will absorb both the nutrients and the HIV virus from outside. Always protect yourself even if you have sex with your long-term partner.
+      </p>
+    <button class="close-btn" ng-click="tab = 0">Back</button>
   </div>
-  <div class="square">
-    <div class="content numbers">
-      3.9/5
-    </div>
+
+  <div class="overlay-content" ng-show="tab === 2">
+    <p> <h4> Q: </h4> Tonight is an important night. It’s our 2 months anniversary and we are going to have sex … I’m worried, how should I prepare myself so that I won’t get pregnant?
+        </p>
+    <p> <h4> A: </h4> As a woman there are multiples steps you can take in order to avoid an unwanted pregnancy that do not rely on the man using birth control or withdrawing.  For example, you can get a birth control implant, a by small-sized rod that gets inserted in the arm or the uterus by a health care provider. There is also a birth control ring that gets placed in your virgina once a month for three weeks to prevent pregnancy.
+        </p>
+        <p> <h4> Q: </h4> Oh it seems painful. Is there any other way, Doctor?
+      </p>
+      <p> <h4> A: </h4>  You can also take birth control in the form of either pills or shots. The shot only lasts for three months. There are two types of pills right now: 
+        </p>
+        <p> Birth control pills: which you need to take everyday around the same time. These are low dosages of hormones that regulate your periods and are the most common birth control option prescribed by health providers.
+        </p>
+        <p> Morning pills: to be used only the case of an emergency if you had unprotected sex and believe you could be pregnant. Must be taken up to 5 days after you had sex.
+      </p>
+        <p> <h4> Q: </h4> Is there a chance birth control can fail?
+      </p>
+      <p> <h4> A: </h4>  Nothing is completely 100% success. Birth control implants have the best success rate in women but if you never want to become pregnant, you can choose to do tubal sterilization. However, it is permanent.
+        </p>
+    <button class="close-btn" ng-click="tab = 0">Back</button>
   </div>
-  <!-- 2nd row verticaly centered images in square columns -->
-  <div class="square">
-    <div class="content">
-      <img class="rs" src="https://farm3.staticflickr.com/2878/10944255073_973d2cd25c.jpg" /> Responsive image.
-    </div>
+
+  <div class="overlay-content" ng-show="tab === 3">
+    <p><h4> Q: </h4>  Hi Doctor, I’m Ellen. I think I got an STD. Can you tell me what the usual symptoms of STDs are?
+      </p>
+    <p><h4> A: </h4> Each STD has different symptoms. Some common STDs for women are chlamydia, gonorrhea, HPV, and genital herpes. The list I provided on top of this page briefly details some symptoms for each STD, but I think you should to go to the hospital to get tested if you are still unsure.
+      </p>
+    <button class="close-btn" ng-click="tab = 0">Back</button>
   </div>
-  <div class="square">
-    <div class="content">
-      <img class="rs" src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" /> Responsive image.
-    </div>
+<div class="overlay-content" ng-show="tab === 4">
+    <p><h4> Q: </h4>  Doctor, this is me, Allison and my friend Bob. We just got the results back-  we both have an STD!! Where should I get my treatment?
+      </p>
+    <p><h4> A: </h4> I can give you the list of places to go to. Some diseases such as chlamydia, syphilis, and gonorrhea can be cured by antibiotic treatment. However, HIV or chronic hepatitis B infection don’t have cures yet. But don’t lose hope but you can take medications to manage these chronic conditions. If you have an STD, make sure you tell your previous partners so that they can go get checked and treated as well.
+      </p>
+    <button class="close-btn" ng-click="tab = 0">Back</button>
   </div>
-  <div class="square">
-    <div class="content">
-      <img class="rs" src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" /> Responsive image.
-    </div>
-  </div>
-  <!-- 3rd row responsive images in background with centered content -->
-  <div class="square bg img1">
-    <div class="content">
-      Another scenario here too many scenarios.
-    </div>
-  </div>
-  <div class="square bg img2">
-    <div class="content">
-      Again
-    </div>
-  </div>
-  <div class="square bg img3">
-    <div class="content">
-      And again
-    </div>
+<div class="overlay-content" ng-show="tab === 5">
+    <p><h4> Q: </h4>  I just found out we have an STD (Nooo!!!). What should I do so that my family/friends don’t get STD from me?  
+      </p>
+    <p><h4> A: </h4> STDs involve the transmission of a disease from one person to another during sexual activity. So all you need to do is to avoid sexual contact until to STD has been cured. Sexual contact is more than just sexual intercourse (vaginal and anal). It even includes kissing, oral-genital contact, and the use of sexual "toys," such as vibrators.
+      </p>
+    <button class="close-btn" ng-click="tab = 0">Back</button>
+  </div><div class="overlay-content" ng-show="tab === 6">
+    <p><h4> Q: </h4>  Hi doctor, I’m Taylor. I just met a really cool guy yesterday at a party, and our relationship is progressing. One problem, I have STD, but I don’t want him to get it from me. How can we do it safely?
+      </p>
+    <p><h4> A: </h4> Hi Taylor, condoms are the only birth control that reduces your risk of both pregnancy and STDs. But, in order to work, condoms must be used correctly and must be used every time you have sex. It’s important to know, however, that they cannot completely protect you and your partner from some STDs, like herpes, syphilis, or human papilloma virus (HPV), the virus that causes genital warts and cervical cancer. Also, condoms can break, slip, or leak, especially if they are not put on and taken off properly. The only sure way to prevent pregnancy and STDs is to NOT to have sex and make sure you get regularly tested and treated for your current STD.
+      </p>
+    <button class="close-btn" ng-click="tab = 0">Back</button>
+  </div><div class="overlay-content" ng-show="tab === 7">
+    <p><h4> Q: </h4>  Hi Doctor. Last night, I went to the bar, got drunk, and this morning, I woke up seeing a stranger in my bed. Apparently we had sex last night, without using any protection devices. I don’t know if they have an STD or not. What should I do now?
+      </p>
+    <p><h4> A: </h4> If you do not want to get pregnant, you can take a morning after pill. Since you don’t know about your partner’s health condition, you should go tested for STDs as soon as possible. If you have sex without using any protection device and your sexual partner has an STD, it is likely that the disease is transmitted.
+      </p>
+    <button class="close-btn" ng-click="tab = 0">Back</button>
   </div>
 </div><!-- end of container -->

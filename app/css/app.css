@@ -38,7 +38,7 @@ h1, h2, h3, h4, p, a, span, label {
   color: rgba(119, 119, 119, 0.55);
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active {
   /*background-color: rgb(219, 219, 219) !important;*/
   border-radius: 5px;
   font-weight: bold;
@@ -182,74 +182,112 @@ table, th, td {
   height: 100%;
 }
 
-/* <-- Just for the demo, Yes I like pretty fonts... */
-.square {
+/*cards*/
+#safe-sex-wrapper {
+  width: 1405px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0px;
+  height: 0px;
+  padding-left: 0px;
+  padding-right: 60px;
+  margin-left: -130px;
+}
+
+#safe-sex-wrapper ul#index_cards {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#safe-sex-wrapper ul#index_cards li {
+  background-color: #efefef;
+  height: 600px;
+  width: 182px;
+  display: block;
   float: left;
+  border: 1px solid #666;
+  padding: 25px 10px;
   position: relative;
-  width: 30%;
-  padding-bottom: 30%;
-  /* = width for a 1:1 aspect ratio */
-  margin: 1.66%;
-  background-color: #1E1E1E;
-  overflow: hidden;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: 6px 6px 15px #000;
+  -webkit-box-shadow: 6px 6px 15px #000;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 
-.content {
-  position: absolute;
-  height: 90%;
-  /* = 100% - 2*5% padding */
-  width: 90%;
-  /* = 100% - 2*5% padding */
-  padding: 5%;
+#safe-sex-wrapper #card-1 {
+  -webkit-transform: rotate(-16deg);
+  -moz-transform: rotate(-16deg);
+  z-index: 1;
+  left: 110px;
+  top: 50px;
 }
 
-
-/*  For responsive images */
-
-.content .rs {
-  width: auto;
-  height: auto;
-  max-height: 90%;
-  max-width: 100%;
+#safe-sex-wrapper #card-2 {
+  -webkit-transform: rotate(-12deg);
+  -moz-transform: rotate(-12deg);
+  z-index: 2;
+  left: 70px;
+  top: 30px;
 }
 
 
-/*  For responsive images as background */
-
-.bg {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* you change this to "contain" if you don't want the images to be cropped */
-  color: #fff;
+#safe-sex-wrapper #card-3 {
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  z-index: 3;
+  left: 30px;
+  top: 10px;
 }
 
-.img1 {
-  background-image: url('https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg');
+#safe-sex-wrapper #card-4 {
+  background-color: #69732B;
+  z-index: 4;
 }
 
-.img2 {
-  background-image: url('https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg');
+#safe-sex-wrapper #card-5 {
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  z-index: 3;
+  right: 30px;
+  top: 10px;
 }
 
-.img3 {
-  background-image: url('https://farm4.staticflickr.com/3794/13893055574_3df0ab636b.jpg');
+#safe-sex-wrapper #card-6 {
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  z-index: 2;
+  right: 70px;
+  top: 30px;
 }
 
-
-/*  following just for the demo */
-
-body {
-  font-size: 20px;
-  font-family: 'Lato', verdana, sans-serif;
-  color: #fff;
-  background: #ECECEC;
+#safe-sex-wrapper #card-7 {
+  -webkit-transform: rotate(16deg);
+  -moz-transform: rotate(16deg);
+  z-index: 1;
+  right: 110px;
+  top: 50px;
 }
 
-.numbers {
-  font-weight: 900;
-  font-size: 100px;
+/* Hover States */
+
+#safe-sex-wrapper ul#index_cards li:hover {
+  z-index: 5;
 }
+
+#safe-sex-wrapper ul#index_cards li a {
+  color: #777;
+  text-decoration: none;
+}
+
+#safe-sex-wrapper ul#index_cards li a:hover, a:active {
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 
 /*############################## CONSENT ##############################*/
 #consent-intro {
@@ -423,6 +461,61 @@ ul#index_cards li a:hover {
   font-family: 'Didact Gothic', sans-serif;
   /*float: left;*/
   text-align: center;
+}
+
+/*############################## TALK ABOUT IT ##############################*/
+#talk-intro {
+  background-image: url(../img/cover2-blurred.jpg);
+  height: 25em;
+  background-size: cover;
+}
+
+#talk-intro h1 {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 100px;
+}
+
+#talk-intro p {
+  font-size: 20px;
+  text-align: center;
+  color: #666;
+}
+
+#talk-intro #author {
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+  font-family: cursive;
+}
+
+.input-box {
+  margin-top: 30px;
+  text-align: center; 
+}
+
+.input-box textarea {
+  resize: none;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  outline: none;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 30px;
+}
+
+.story-area li:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+.story-area li {
+  padding: 10px;
+  border-radius: 5px;
+  list-style-type: none;
 }
 
 /*############################## FOOTER ##############################*/

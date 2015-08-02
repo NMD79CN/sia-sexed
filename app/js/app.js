@@ -27,6 +27,10 @@ sexEdApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'partials/option.html',
       controller: 'OptionCtrl'
     })
+    .when('/talk', {
+      templateUrl: 'partials/talk.html',
+      controller: 'TalkCtrl'
+    })
     .otherwise({
       redirectTo: '/home'
     });
