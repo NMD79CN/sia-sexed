@@ -1,18 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 
 body {
   padding-top: 90px;
+  font-family: 'Didact Gothic', sans-serif !important;
+  font-size: 15px;
 }
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: center;
+h1, h2, h3, h4, p, a, span, label {
+  font-family: 'Didact Gothic', sans-serif;
+  letter-spacing: 0.08em;
 }
 
+/*############################## NAV BAR ##############################*/
 #sharedNavBrand {
   height: 100%;
 }
@@ -54,6 +54,7 @@ th, td {
   text-align: center;
 }
 
+/*############################## HOME & LANDING PAGE ##############################*/
 .home-img {
   position: relative;
   z-index: 0;
@@ -147,13 +148,41 @@ th, td {
   font-family: 'Didact Gothic', sans-serif;
 }
 
+/*############################## SAFER SEX ##############################*/
+#safer-sex-intro {
+  background-image: url(../img/safe-sex-blurred.jpg);
+  height: 25em;
+  background-size: cover;
+}
 
+#safer-sex-intro h1 {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 100px;
+}
+
+#safer-sex-intro p {
+  font-size: 20px;
+  text-align: center;
+  color: #666;
+}
 /*Grid square*/
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px !important;
+  text-align: center !important;
+}
 
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+#chart-protection {
+  position: absolute;
+  left: -125px !important;
+  top: 70px !important;
+  width: 100%;
+  height: 100%;
+}
 
 /* <-- Just for the demo, Yes I like pretty fonts... */
-
 .square {
   float: left;
   position: relative;
@@ -220,4 +249,191 @@ body {
 .numbers {
   font-weight: 900;
   font-size: 100px;
+}
+
+/*############################## CONSENT ##############################*/
+#consent-intro {
+  background-image: url(../img/consent-blurred.jpg);
+  height: 25em;
+  background-size: cover;
+}
+
+#consent-intro h1 {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 100px;
+}
+
+#consent-intro p {
+  font-size: 20px;
+  text-align: center;
+  color: #666;
+}
+
+/*############################## SEXUALITY ##############################*/
+#sexuality-intro {
+  background-image: url(../img/sexuality-blurred.jpg);
+  height: 25em;
+  background-size: cover;
+}
+
+#sexuality-intro h1 {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 100px;
+}
+
+#sexuality-intro p {
+  font-size: 20px;
+  text-align: center;
+  color: #666;
+  padding: 0 10px 0 10px;
+}
+
+/*############################## OPTION ##############################*/
+#option-intro {
+  background-image: url(../img/option-blurred.jpg);
+  height: 25em;
+  background-size: cover;
+}
+
+#option-intro h1 {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 100px;
+}
+
+#option-intro p {
+  font-size: 20px;
+  text-align: center;
+  color: #666;
+}
+
+#wrapper {
+  width: 930px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0px;
+  height: 0px;
+}
+/* Index Card Styling */
+ul#index_cards {
+  margin-top: 50px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+ul#index_cards li {
+  background-color: #efefef;
+  height: auto;
+  width: 270px;
+  display: block;
+  float: left;
+  border: 1px solid #666;
+  padding: 25px 10px;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: 1px 1px 1px #666;
+  -webkit-box-shadow: 1px 1px 1px #666;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+#card-1 {
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  z-index: 1;
+  left: 50px;
+  top: 20px;
+}
+
+#card-2 {
+  z-index: 2;
+}
+
+#card-3 {
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  z-index: 1;
+  right: 50px;
+  top: 20px;
+}
+
+/* Hover States */
+ul#index_cards li:hover {
+  z-index: 3;
+}
+
+#card-1:hover {
+  -moz-transform: scale(1.1) rotate(-13deg);
+  -webkit-transform: scale(1.1) rotate(-13deg);
+}
+
+#card-2:hover {
+  -moz-transform: scale(1.1) rotate(2deg);
+  -webkit-transform: scale(1.1) rotate(2deg);
+}
+
+#card-3:hover {
+  -moz-transform: scale(1.1) rotate(17deg);
+  -webkit-transform: scale(1.1) rotate(17deg);
+}
+/* Content Styling */
+ul#index_cards li img {
+  margin-top: 7px;
+  background: #eee;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #aaa;
+  -webkit-box-shadow: 0px 0px 5px #aaa;
+}
+
+ul#index_cards li p {
+  margin-top: 4px;
+  text-align: left;
+  line-height: 28px;
+}
+
+ul#index_cards li a {
+  color: #777;
+  text-decoration: none;
+}
+
+ul#index_cards li a:hover {
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.overlay-content {
+  background-color: #efefef;
+  padding: 1%;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+  cursor: default;
+  z-index: 10001;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.9);
+  font-size: 15px;
+  font-family: 'Didact Gothic', sans-serif;
+  /*float: left;*/
+  text-align: center;
+}
+
+/*############################## FOOTER ##############################*/
+.footer-wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 40px 4%;
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: center;
+}
+
+.footer-wrapper span {
+  font-size: 16px;
 }

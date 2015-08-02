@@ -1,1 +1,58 @@
-<h1>{{category}}</h1>
+<div id="sexuality-intro">
+	<h1> SEXUALITY • BODY AWARENESS • LGBT • GENDER EQUALITY</h1>
+	<p>
+		In this category, we focus on gender issue such as LGBT (Lesbian Gay Bisexual and Transgender) and gender equality. People in this group tend to suffer from social pressure and they are afraid to be isolated and discriminated by other “straight” people.
+	</p>
+</div>
+
+<div class="container">
+	<div id="wrapper">
+		<h2>Scenarios</h2>
+	  <ul id="index_cards" ng-init="tab = 0">
+	    <li id="card-1" ng-class="{active:tab===1}">
+	      <a class="show-popup" ng-click="tab = 1"><h4>Sexually confused </h4> </a>
+	      <img src="./img/sexuality/confused.jpg" height="146" width="̀130px" alt="LGBT" />
+	      <p>  I am sexually confused. Hi Doctor. I’m Sammy, and I’m 16. Well, the question I’m going to ask is pretty intimate. I’m a girl physically, but I don’t feel anything toward guys, and sometimes I feel attracted to my best girlfriends. I don’t know if I was just confusing friendship with love, or do I like girls?
+	      </p>
+	    </li>
+	    <li id="card-2" ng-class="{active:tab===2}">
+	      <a class="show-popup" ng-click="tab = 2"><h4>Social Pressure</h4></a>
+	      <img src="./img/sexuality/socialpressure.jpg" height="140" width="130" alt="LGBT" />
+	      <p> Should I tell people I am LGBTQ? I am a guy who likes guys. I am a football player and weight trainer, but love baking. I have found girlfriends to pretend I am straight but don’t want to keep lying.  What should I do if my family and friends don’t want to accept me for who I am?
+          </p>
+	    </li>
+	    <li id="card-3" ng-class="{active:tab===3}">
+	      <a class="show-popup" ng-click="tab = 3"><h4>Stick to yourself</h4></a>
+	      <img src="./img/sexuality/sticking.jpg" height="137" width="145" alt="LGBT" />
+	      <p> Hi Doctor, I came out of the closet to my parents yesterday. They are pretty conservative, and they did not accept that fact that I am LGBTQ. They are hoping to “cure my abnormal disease”. Should I just try to change my sexuality to please my parents, or should I be true to myself?
+	      </p>
+	    </li>
+	  </ul>
+	</div>
+
+	<div class="overlay-content" ng-show="tab === 1">
+	  <p>
+	    <h4> Q: </h4> I am sexually confused. Hi Doctor. I’m Sammy, and I’m 16. Well, the question I’m going to ask is pretty intimate. I’m a girl physically, but I don’t feel anything toward guys, and sometimes I feel attracted to my best girlfriends. I don’t know if I was just confusing friendship with love, or do I like girls?
+	  </p>
+	  <p>
+	    <h4> A: </h4> To determine if you are lesbian or not, you should question your past relationships with both sexes, which sex aroused you the most, and your fantasies with same-sex partners. After you know your sexual inclinations, just live true to yourself. I also want to clarify that being attracted to the same sex is not abnormal. There are many reasons for being LGBT, starting with psychological circumstances, genetic makeup and simple preferences. There are many people who, just like you, are attracted to the same sex, so you should not be ashamed of yourself.
+      </p>
+	  <button class="close-btn" ng-click="tab = 0">Back</button>
+	</div>
+
+	<div class="overlay-content" ng-show="tab === 2">
+		<p> <h4> Q: </h4> Should I tell people I am LGBTQ? I am a guy who likes guys. I am a football player and weight trainer, but love baking. I have found girlfriends to pretend I am straight but don’t want to keep lying.  What should I do if my family and friends don’t want to accept me for who I am?
+        </p>
+		<p><h4> A: </h4> My advice is just to live true to yourself and your sexual inclinations. Your true friends will stay by your side because if they love you for who you are, they will accept your other aspects. If you’re afraid that your friends might tease you, calmly explain to them that being attracted to the same sex is not abnormal, and your sexual inclinations do not define who you are. Don’t date girls if you actually do not like them, because it will hurt both you and the other partner. It’s also unjust to take advantage of others’ feelings to protect yourself.
+        </p>
+		<button class="close-btn" ng-click="tab = 0">Back</button>
+	</div>
+
+	<div class="overlay-content" ng-show="tab === 3">
+		<p><h4> Q: </h4>  Hi Doctor, I came out of the closet to my parents yesterday. They are pretty conservative, and they did not accept that fact that I am LGBTQ. They are hoping to “cure my abnormal disease”. Should I just try to change my sexuality to please my parents, or should I be true to myself?
+	    </p>
+		<p><h4> A: </h4> Hi Kate! You have done the right thing by telling him that you are not ready. It's okay if you're not on the same page about having sex right then, right there. The important thing is to be open and honest with your partner so he knows this is not about hurting him. Make sure you're clear that you want to be affectionate and connect, just not in that way right now. It’s important to be who you are, regardless of others’ opinions. Try to explain to your parents and relatives that being attracted to the same sex is not abnormal, and your sexual inclinations do not define who you are. Take them to some accredited sexual psychologists to get professional advice if they still don’t believe your explanations. Show them how happy you are when you can date who you love, instead of forcing yourself to date people they want you to date. Also, don’t start a half-hearted relationship with anyone just to please your parents, because it will hurt both you and the other partner. And congratulations, you already took the first step in telling them who you really are!
+	    </p>
+		<button class="close-btn" ng-click="tab = 0">Back</button>
+	</div>
+</div>

@@ -1,40 +1,80 @@
-<div class="container">
+<div id="safer-sex-intro">
   <!-- Heading -->
-  <h1>Safer Sex</h1>
+  <h1>SAFER SEX</h1>
   <!-- Introduce the topic -->
   <p>
     In this category, we focus on how to have safer sex and gain people’s awareness about STD or even birth control, two important factors that people should be aware of.
   </p>
-  <!-- Table -->
-  <table>
-    <caption>STD Symptoms for Girls</caption>
-    <tr>
-      <th>Chlamydia</th>
-      <td>Most women do not experience any symptoms. some experience vaginal discharge, abdominal pain. It can cause severe pelvic infection, which can lead to infertility and tubal pregnancy.</td>
-    </tr>
-    <tr>
-      <th>Gonorrhea</th>
-      <td>Burning or frequent urination, a yellowish vaginal discharge, redness and swelling of the genitals, and a burning or itching of the vaginal area.</td>
-    </tr>
-    <tr>
-      <th>HPV</th>
-      <td>Appearance of a genital lesion. Genital warts usually appear as small, fleshy, raised bumps on sexually-exposed area and are sometimes associated with itching, burning, or tenderness in the area.</td>
-    </tr>
-    <tr>
-      <th>Genital herpes</th>
-      <td>Initial itching or tingling sensation followed by redness of the skin. Then a blister forms, followed by ulcers when the blisters break.</td>
-    </tr>
-  </table>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6"> 
+      <!-- Table -->
+      <table>
+        <caption>STD Symptoms for Girls</caption>
+        <tr>
+          <th>Chlamydia</th>
+          <td>Most women do not experience any symptoms. some experience vaginal discharge, abdominal pain. It can cause severe pelvic infection, which can lead to infertility and tubal pregnancy.</td>
+        </tr>
+        <tr>
+          <th>Gonorrhea</th>
+          <td>Burning or frequent urination, a yellowish vaginal discharge, redness and swelling of the genitals, and a burning or itching of the vaginal area.</td>
+        </tr>
+        <tr>
+          <th>HPV</th>
+          <td>Appearance of a genital lesion. Genital warts usually appear as small, fleshy, raised bumps on sexually-exposed area and are sometimes associated with itching, burning, or tenderness in the area.</td>
+        </tr>
+        <tr>
+          <th>Genital herpes</th>
+          <td>Initial itching or tingling sensation followed by redness of the skin. Then a blister forms, followed by ulcers when the blisters break.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <table>
+        <caption>STD Symptoms for Boys</caption>
+        <tr>
+          <th>Chlamydia</th>
+          <td>Many do not display any symptoms until severals weeks of infection. Pain when urinating, penile discharge, swelling of testicles.</td>
+        </tr>
+        <tr>
+          <th>Gonorrhea</th>
+          <td>Pain when urinating, a green, white, or yellow discharge from the penis, swollen testicles.</td>
+        </tr>
+        <tr>
+          <th>Hepatitis B</th>
+          <td>Loss of appetite, lethargic feelings, low-grade fever, muscle and joint pain and aches, nausea, vomiting and jaundice (yellow hue to the skin and dark urine).</td>
+        </tr>
+        <tr>
+          <th>Herpes</th>
+          <td>Tingling, itching, or burning of the skin in the area around the blisters on the penis, testicles, on and around the anus, buttocks, or thighs or blisters on the lips, tongue, gums, and other parts of the body.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
   <!-- Graphs -->
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-8">
         <div google-chart chart="chartHiv" style="{{chartHiv.cssStyle}}"></div>
       </div>
-      <div class="col-md-3">
-        <div google-chart chart="chartProtection"></div>
+      <div class="col-md-4">
+        <div google-chart chart="chartProtection" id="chart-protection"></div>
       </div>
     </div><!-- end of row -->
-
+  <!-- DROPDOWN   -->
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Chọn tỉnh thành
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <li ng-repeat="province in provinces">
+        <a>{{province}}</a>
+      </li>
+    </ul>
+  </div>  
   <!-- SCENARIO -->
   <h2>Scenarios</h2>
   <!-- 1st row verticaly centered text in the square columns -->

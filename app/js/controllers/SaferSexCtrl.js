@@ -4,6 +4,9 @@
 var sexEdControllers = angular.module('SexEdControllers');
 
 sexEdControllers.controller('SaferSexCtrl', function ($scope) {
+  //Provinces
+  $scope.provinces = ['Hà Nội', 'Thành phố Hồ Chí Minh'];
+
   // Proportion of HIV infectors
   var chart1 = {};
   chart1.type = "ColumnChart";
@@ -66,17 +69,61 @@ sexEdControllers.controller('SaferSexCtrl', function ($scope) {
       ];
     chart1.options = {
         // displayExactValues: true,
-        width: 400,
-        height: 200,
+        width: 600,
+        height: 300,
         is3D: true,
-        chartArea: {left:10,top:10,bottom:0,height:"100%"}
+        chartArea: {height:"100%"}
     };
-    // chart1.formatters = {
-    //   number : [{
-    //     columnNum: 1,
-    //     pattern: "#.##%"
-    //   }]
-    // };
-
     $scope.chartProtection = chart1;
 });
+
+// $scope.branches = [['STI Ngôi nhà tuổi trẻ clinics (miễn phí)
+//   5 Nguyễn Quý Đức Street,  Thanh Xuân District, Hà Nội
+//   Phone: 04.35540155',
+//   'Hải Đăng Men Health Club clinics
+//    5, 30 Backway Cát Linh, Đống Đa District, Hà Nội
+//   Phone: 04.37349148',
+//   'Leprosy Dermatology Hospital
+//   79B Nguyễn Khuyến Street, Đống Đa District, Hà Nội
+//   Phone: 04.38510163/04.37334152',
+//   'National Leprosy Dermatology Hospita
+//   Phương Mai Street,  Đống Đa District, Hà Nội
+//   Phone: 04.38524762,
+//   Đống Đa Hospital, Hà Nội'
+//   '190 Nguyễn Lương Bằng Street,  Đống Đa District, Hà Nội
+//   Phone: 04.35115039/04.35118752',
+//   'Association for HIV/AIDS Prevention and Control,  Hà Nội
+//   86 Thợ Nhuộm Street, Hoàn Kiếm District, Hà Nội
+//   Phone: 04.38221526',
+//   'Trường Giang General Hospital
+//   15, 168 Backway Kim Giang Street,  Hoàng Mai District, Hà Nội
+//   Phone: 04.35599957',
+//   'Light Center
+//   4 Building A2, Nguyễn Khánh Toàn Street, Cầu Giấy District, Hà Nội
+//   Phone: 04.362671455',
+//   'Center for Women Health Support  - Đức Giang Hospital
+//   Trường Lâm Street, Đức Giang, Long Biên District, Hà Nội
+//   Phone: 04.38776625'],
+//   ['Ánh Dương Center  (miễn phí)
+//     71 Võ Thị Sáu Street, Ward 6, District 3, Hồ Chí Minh City
+//     Phone: 08.38209426',
+//     'STI Clinics - Bầu trời xanh Club (Sexuality for men Project)
+//     (free testing and treatment)
+//     8/104 Đinh Bộ Lĩnh Street, Ward 24, Bình Thạnh District,  Hồ Chí Minh City
+//     Phone: 08.35513940/08.22160848',
+//     'An Hòa Clinics  (free diagnosis and treatment)
+//     958/24k Lò Gốm Street, Ward 8, District 6,  Hồ Chí Minh City
+//     Phone: 08.38545285',
+//     'Consulting and Assisting Community Center, District 1
+//     48 - 52 Mã Lộ Street, Tân Định Ward, District 1, Hồ Chí Minh City
+//     Phone: 08.3820654',
+//     'Dermatologic Clinics (DFID)
+//     82 Cao Lỗ, Ward 4, District 8, Hồ Chí Minh City
+//     Phone: 08.38506186',
+//     'Marie Stopes Clinics, District 5
+//     42 Học Lạc, Ward 14, District 5,  Hồ Chí Minh City
+//     Phone: 08.39241713/08.38552616',
+//     'Marie Stopes Clinics, District 1
+//     253 Trần Quang Khải Street, Tân Định Ward, District 1,  Hồ Chí Minh City
+//     Phone: 08.35265950'
+//   ]];

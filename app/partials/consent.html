@@ -1,1 +1,58 @@
-<h1>{{category}}</h1>
+<div id="consent-intro">
+	<h1>CONSENT • RAPE • PEER PRESSURE) </h1>
+	<p>
+		In this category, we focus on informing people how to cope with the peer pressure and the way to solve problems that arise when it comes to having sex.
+	</p>
+</div>
+
+<div class="container">
+	<div id="wrapper">
+	  <ul id="index_cards" ng-init="tab = 0">
+	  	<h2>Scenarios</h2>
+	    <li id="card-1" ng-class="{active:tab===1}">
+	      <a class="show-popup" ng-click="tab = 1"><h4>Yes or no? </h4> </a>
+	      <img src="./img/consent/signal.jpg" height="146" width="̀130px" alt="Consent" />
+	      <p>  Hi, I am confused, my partner says she wants to have sex but then always pushed me away. Does she want to do it or not?
+	      </p>
+	    </li>
+	    <li id="card-2" ng-class="{active:tab===2}">
+	      <a class="show-popup" ng-click="tab = 2"><h4>Peer Pressure</h4></a>
+	      <img src="./img/consent/peerpressure.jpg" height="140" width="130" alt="Consent" />
+	      <p> Most of my male friends have already had sex and they openly talk about it. I have never tried it and I tend to drift away during their conversations. What should I do?</p>
+	    </li>
+	    <li id="card-3" ng-class="{active:tab===3}">
+	      <a class="show-popup" ng-click="tab = 3"><h4>Not ready</h4></a>
+	      <img src="./img/consent/notready.jpg" height="137" width="145" alt="Consent" />
+	      <p> I have been dating a guy, and one day, he asked me to make love. I told him that I was not ready at the moment but he kept persuading me that he would use protection. How can I explain to to him that I wanna to wait without it affecting our relationship?
+	      </p>
+	    </li>
+	  </ul>
+	</div>
+
+	<div class="overlay-content" ng-show="tab === 1">
+	  <p>
+	    <h4> Q: </h4> Hi, I am confused, my partner says she wants to have sex but then always pushed me away. Does she want to do it or not?
+	  </p>
+	  <p>
+	    <h4> A: </h4> Consent is always tricky to understand because it seems subjective. What if your partner says no but their body language says yes? What is they push you away but ask for more? The best way to make sure you are not doing anything your partner does not want is to have a conversation about what you want to do beforehand, be OK with the fact that people change their minds, and most importantly, if there is ANY sign of hesitation it is better to not do it. Here is a great article that explains consent in a fun way:
+http://www.theloop.ca/this-woman-just-explained-consent-with-the-most-perfect-metaphor/
+      </p>
+	  <button class="close-btn" ng-click="tab = 0">Back</button>
+	</div>
+
+	<div class="overlay-content" ng-show="tab === 2">
+		<p> <h4> Q: </h4> Good afternoon doctor, I’m John. I am under a lot of pressure because most of my male friends have already had sex and they talk about it in such a open and casual manner. Meanwhile, I have never tried it and I tend to drift away during their conversations. What should I do doctor?
+        </p>
+		<p><h4> A: </h4> Hi John. I appreciate that you are talking to me about this. Sometimes people may sound like they are having sex, but it does not mean they actually are. Bear in mind that not having sex is not a sign that you’re immature and saying no to sex is not a bad thing for your health. Everyone deserves to make their own decision in their own time so don’t put pressure on yourself to have sex. Sex can be great when both people like each other and feel ready. Don’t let anyone tell you otherwise.
+        </p>
+		<button class="close-btn" ng-click="tab = 0">Back</button>
+	</div>
+
+	<div class="overlay-content" ng-show="tab === 3">
+		<p><h4> Q: </h4>  Hello Doctor. My name is Kate. I have a quite sensitive problem and I don’t know who to share it with. I have been dating a guy, who seems nice and the last time we met, he asked me to make love. I told him that I was not ready at the moment but he kept persuading me and told me that he would use protection. How can I explain to to him that I wanna to wait without it affecting our relationship?
+	    </p>
+		<p><h4> A: </h4> Hi Kate! You have done the right thing by telling him that you are not ready. It's okay if you're not on the same page about having sex right then, right there. The important thing is to be open and honest with your partner so he knows this is not about hurting him. Make sure you're clear that you want to be affectionate and connect, just not in that way right now.
+	    </p>
+		<button class="close-btn" ng-click="tab = 0">Back</button>
+	</div>
+</div>

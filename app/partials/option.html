@@ -1,1 +1,61 @@
-<h1>{{category}}</h1>
+<div id="option-intro">
+	<h1>OPTION • ABORTION</h1>
+	<p>
+		In this category, we focus on the commonly-asked question: whether one should have an abortion or not. We also provide some crucial information and awareness before deciding on having abortion.
+	</p>
+</div>
+
+<div class="container">
+	<div id="wrapper">
+	  <ul id="index_cards" ng-init="tab = 0">
+	  	<h2>Scenarios</h2>
+	    <li id="card-1" ng-class="{active:tab===1}">
+	      <a class="show-popup" ng-click="tab = 1"><h4>Should I abort?</h4> </a>
+	      <img src="./img/option/should.jpg" height="146" width="̀130px" alt="Toucan" />
+	      <p> Hi Doctor, I’m Katie. I’m 16 and pregnant, and I’m totally not ready for this. Should I abort?
+	      </p>
+	    </li>
+	    <li id="card-2" ng-class="{active:tab===2}">
+	      <a class="show-popup" ng-click="tab = 2"><h4>I decided I want an abortion</h4></a>
+	      <img src="./img/option/abort.jpg" height="140" width="130" alt="Fox" />
+	      <p> Hi, It’s Mia. I just decided on getting an abortion, but I don’t know what I should do next.</p>
+	    </li>
+	    <li id="card-3" ng-class="{active:tab===3}">
+	      <a class="show-popup" ng-click="tab = 3"><h4>I want to keep the baby</h4></a>
+	      <img src="./img/option/keep.jpg" height="137" width="145" alt="Dog" />
+	      <p> Hi Doctor, I’m Tracy. I want to keep the baby. Can you give me some advice?
+	      </p>
+	    </li>
+	  </ul>
+	</div>
+
+	<div class="overlay-content" ng-show="tab === 1">
+	  <p>
+	    <h4> Q: </h4> Hi, I’m Katie. I’m 16 and pregnant, and I’m totally not ready for this. Should I abort?
+	  </p>
+	  <p>
+	    <h4> A: </h4> Before you decide, you need to know that abortion leaves psychological and physical consequences. Many women suffer from depression, repression of emotions, and have self-punishing behaviours. Also you can suffer from insomnia and nightmares. On the physical side, damage to uterus can cause back pain and abdominal cramps. In some cases, the fetus is not completely pulled out, which can cause incessant bleeding. And the worst case can be that you can not have children anymore. If you have thought through all your options (adoption, raising the baby) and none seem like the right choice for you, just make sure that you go to a good clinical practice to make sure you are safe during the procedure and get the best care possible. </p>
+	  <p>
+	    <h4> Q: </h4> But how should I tell my parents I am pregnant? They’re gonna get really mad.
+	  </p>
+	  <p>
+	    <h4> A: </h4> You should tell your parents about your condition as soon as possible. First you need to find the right time and place to tell them. You must be prepared to deal with whatever reaction they may have. Don’t interrupt them and yell back. Tell them nicely how you feel and how much you need their encouragement. If you are scared, you can go to a professional to get help. Remember, it is really hard to tell your parents, but they will find out anyway in the long term. It would be best if they can give you support from the start. If your parents are very unforgiving, remember that there are many clinics and health support groups out there that will help you every step of the way. If you and your girlfriend want to keep the baby, then you need to tell your parents that you have the ability to take responsibility.
+	  </p>
+	  <button class="close-btn" ng-click="tab = 0">Back</button>
+	</div>
+
+	<div class="overlay-content" ng-show="tab === 2">
+		<p> <h4> Q: </h4> Hi, It’s Mia. I just decided on getting an abortion, but I don’t know what I should do next.</p>
+		<p><h4> A: </h4> You need to go to an approved clinic for abortions. There are three types of abortion depending on fetal development. You can use an abortion pill, which is normally recommended if your baby is under 9 weeks old. Another way is called vacuum aspiration, which is recommended if your baby is between 9 and 12 weeks old. For baby who is more than 13 weeks, dilation and evacuation is required where the fetus is pulled out of the uterus.</p>
+		<p> <h4> Q: </h4> Do I need my parents’ consent?</p>
+		<p><h4> A: </h4> You do if you are under 18.</p>  
+		<button class="close-btn" ng-click="tab = 0">Back</button>
+	</div>
+
+<div class="overlay-content" ng-show="tab === 3">
+	<p><h4> Q: </h4>  Hi Doctor, I’m Tracy. I want to keep the baby. Can you give me some advice?</p>
+	<p><h4> A: </h4> Make sure you get good prenatal care to avoid having an unhealthy baby! You need to know that children born to teenage parents tend to be low weight due to lack of nutrition. Your body is not fully developed so your baby may face health complications such as bleeding in the brain, respiratory distress syndrome, and intestinal problems. Also, you need to think about how to give your baby a good life, both economically and emotionally.</p>
+	<button class="close-btn" ng-click="tab = 0">Back</button>
+</div>
+
+</div>
