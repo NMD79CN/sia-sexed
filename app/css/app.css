@@ -518,6 +518,10 @@ ul#index_cards li a:hover {
   list-style-type: none;
 }
 
+#date {
+  font-weight: bold;
+}
+
 /*############################## FOOTER ##############################*/
 .footer-wrapper {
   max-width: 480px;

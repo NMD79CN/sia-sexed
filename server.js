@@ -11,6 +11,7 @@ var app = express();
 app.use(cors());
 var Story = mongoose.model('Story', {
 	text: String,
+	createdAt: Date
 });
 
 //config
@@ -40,6 +41,7 @@ app.get('/api/stories', function(req, res) {
 app.post('/api/stories', function(req, res) {
 	Story.create({
 		text: req.body.text, 
+		createdAt: new Date()
 	}, function(err, stories) {
 		if(err)
 			res.send(err)

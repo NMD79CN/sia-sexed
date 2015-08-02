@@ -82,7 +82,7 @@
     <ul id="index_cards" ng-init="tab = 0">
       <li id="card-1" ng-class="{active:tab===1}">
         <a class="show-popup" ng-click="tab = 1"><h4>Preparing yourself</h4> </a>
-        <img src="./img/safe-sex/prom.jpg" height="146" width="̀130px" alt="SafeSex" />
+        <img src="./img/safe-sex/prom.jpg" height="146" width="130" alt="SafeSex" />
         <p> Hi I’m Xavier. Tonight is my prom night and my date, Daniel, and I might have sex tonight. What do I need to keep in mind before having sex?
         </p>
       </li>
@@ -99,25 +99,25 @@
         </p>
       </li>
         <li id="card-4" ng-class="{active:tab===4}">
-        <a class="show-popup" ng-click="tab = 1"><h4>STD Treatment</h4> </a>
+        <a class="show-popup" ng-click="tab = 4"><h4>STD Treatment</h4> </a>
         <img src="./img/safe-sex/std.jpg" height="146" width="130" alt="SafeSex"/>
         <p>  Doctor, this is me, Allison and my friend Bob. We just got the results back-  we both have an STD!! Where should I get my treatment?
         </p>
       </li>
         <li id="card-5" ng-class="{active:tab===5}">
-        <a class="show-popup" ng-click="tab = 1"><h4>STD Tranmission </h4> </a>
+        <a class="show-popup" ng-click="tab = 5"><h4>STD Tranmission </h4> </a>
         <img src="./img/safe-sex/transmission.jpg" height="146" width="130" alt="SafeSex" />
         <p>  Hi, I’m Alyssa. I just found out I have STD (Nooo!!!). What should I do so that my family/ friends don’t get STD from me?
         </p>
       </li>
         <li id="card-6" ng-class="{active:tab===6}">
-        <a class="show-popup" ng-click="tab = 1"><h4>Safe Sex </h4> </a>
+        <a class="show-popup" ng-click="tab = 6"><h4>Safe Sex </h4> </a>
         <img src="./img/safe-sex/safesex.jpg" height="146" width="130" alt="SafeSex" />
         <p> Hi doctor, I’m Taylor. I just met a really cool guy yesterday at a party, and our relationship is progressing. One problem, I have STD, but I don’t want him to get it from me. How can we do it safely?
         </p>
       </li>
           <li id="card-7" ng-class="{active:tab===7}">
-        <a class="show-popup" ng-click="tab = 1"><h4>What now? </h4> </a>
+        <a class="show-popup" ng-click="tab = 7"><h4>What now? </h4> </a>
         <img src="./img/safe-sex/drunk.jpg" height="146" width="130px" alt="SafeSex" />
         <p>  I’m Tristine. I went to the bar last night, got drunk, and  woke up this morning seeing a stranger in my bed. Apparently we had sex without using any protection devices. I don’t know if he has any sexually transmitted diseases or not. What should I do now?
         </p>
@@ -136,22 +136,28 @@
   </div>
 
   <div class="overlay-content" ng-show="tab === 2">
-    <p> <h4> Q: </h4> Tonight is an important night. It’s our 2 months anniversary and we are going to have sex … I’m worried, how should I prepare myself so that I won’t get pregnant?
-        </p>
-    <p> <h4> A: </h4> As a woman there are multiples steps you can take in order to avoid an unwanted pregnancy that do not rely on the man using birth control or withdrawing.  For example, you can get a birth control implant, a by small-sized rod that gets inserted in the arm or the uterus by a health care provider. There is also a birth control ring that gets placed in your virgina once a month for three weeks to prevent pregnancy.
-        </p>
-        <p> <h4> Q: </h4> Oh it seems painful. Is there any other way, Doctor?
-      </p>
-      <p> <h4> A: </h4>  You can also take birth control in the form of either pills or shots. The shot only lasts for three months. There are two types of pills right now: 
-        </p>
-        <p> Birth control pills: which you need to take everyday around the same time. These are low dosages of hormones that regulate your periods and are the most common birth control option prescribed by health providers.
-        </p>
-        <p> Morning pills: to be used only the case of an emergency if you had unprotected sex and believe you could be pregnant. Must be taken up to 5 days after you had sex.
-      </p>
-        <p> <h4> Q: </h4> Is there a chance birth control can fail?
-      </p>
-      <p> <h4> A: </h4>  Nothing is completely 100% success. Birth control implants have the best success rate in women but if you never want to become pregnant, you can choose to do tubal sterilization. However, it is permanent.
-        </p>
+    <p>
+      <h4> Q: </h4> Tonight is an important night. It’s our 2 months anniversary and we are going to have sex … I’m worried, how should I prepare myself so that I won’t get pregnant?
+    </p>
+    <p>
+      <h4> A: </h4> As a woman there are multiples steps you can take in order to avoid an unwanted pregnancy that do not rely on the man using birth control or withdrawing. For example, you can get a birth control implant, a by small-sized rod that gets inserted in the arm or the uterus by a health care provider. There is also a birth control ring that gets placed in your virgina once a month for three weeks to prevent pregnancy.
+    </p>
+    <p>
+      <h4> Q: </h4> Oh it seems painful. Is there any other way, Doctor?
+    </p>
+    <p>
+      <h4> A: </h4> You can also take birth control in the form of either pills or shots. The shot only lasts for three months. There are two types of pills right now:
+    </p>
+    <p> Birth control pills: which you need to take everyday around the same time. These are low dosages of hormones that regulate your periods and are the most common birth control option prescribed by health providers.
+    </p>
+    <p> Morning pills: to be used only the case of an emergency if you had unprotected sex and believe you could be pregnant. Must be taken up to 5 days after you had sex.
+    </p>
+    <p>
+      <h4> Q: </h4> Is there a chance birth control can fail?
+    </p>
+    <p>
+      <h4> A: </h4> Nothing is completely 100% success. Birth control implants have the best success rate in women but if you never want to become pregnant, you can choose to do tubal sterilization. However, it is permanent.
+    </p>
     <button class="close-btn" ng-click="tab = 0">Back</button>
   </div>
 
@@ -162,30 +168,40 @@
       </p>
     <button class="close-btn" ng-click="tab = 0">Back</button>
   </div>
-<div class="overlay-content" ng-show="tab === 4">
-    <p><h4> Q: </h4>  Doctor, this is me, Allison and my friend Bob. We just got the results back-  we both have an STD!! Where should I get my treatment?
-      </p>
-    <p><h4> A: </h4> I can give you the list of places to go to. Some diseases such as chlamydia, syphilis, and gonorrhea can be cured by antibiotic treatment. However, HIV or chronic hepatitis B infection don’t have cures yet. But don’t lose hope but you can take medications to manage these chronic conditions. If you have an STD, make sure you tell your previous partners so that they can go get checked and treated as well.
-      </p>
+  
+  <div class="overlay-content" ng-show="tab === 4">
+    <p><h4> Q: </h4>  Doctor, this is me, Allison and my friend Bob. We just got the results back-  we both have an STD!! Where should I get my treatment?</p>
+    <p><h4> A: </h4> I can give you the list of places to go to. Some diseases such as chlamydia, syphilis, and gonorrhea can be cured by antibiotic treatment. However, HIV or chronic hepatitis B infection don’t have cures yet. But don’t lose hope but you can take medications to manage these chronic conditions. If you have an STD, make sure you tell your previous partners so that they can go get checked and treated as well.</p>
     <button class="close-btn" ng-click="tab = 0">Back</button>
   </div>
-<div class="overlay-content" ng-show="tab === 5">
-    <p><h4> Q: </h4>  I just found out we have an STD (Nooo!!!). What should I do so that my family/friends don’t get STD from me?  
-      </p>
-    <p><h4> A: </h4> STDs involve the transmission of a disease from one person to another during sexual activity. So all you need to do is to avoid sexual contact until to STD has been cured. Sexual contact is more than just sexual intercourse (vaginal and anal). It even includes kissing, oral-genital contact, and the use of sexual "toys," such as vibrators.
-      </p>
+
+  <div class="overlay-content" ng-show="tab === 5">
+    <p>
+      <h4> Q: </h4> I just found out we have an STD (Nooo!!!). What should I do so that my family/friends don’t get STD from me?
+    </p>
+    <p>
+      <h4> A: </h4> STDs involve the transmission of a disease from one person to another during sexual activity. So all you need to do is to avoid sexual contact until to STD has been cured. Sexual contact is more than just sexual intercourse (vaginal and anal). It even includes kissing, oral-genital contact, and the use of sexual "toys," such as vibrators.
+    </p>
     <button class="close-btn" ng-click="tab = 0">Back</button>
-  </div><div class="overlay-content" ng-show="tab === 6">
-    <p><h4> Q: </h4>  Hi doctor, I’m Taylor. I just met a really cool guy yesterday at a party, and our relationship is progressing. One problem, I have STD, but I don’t want him to get it from me. How can we do it safely?
-      </p>
-    <p><h4> A: </h4> Hi Taylor, condoms are the only birth control that reduces your risk of both pregnancy and STDs. But, in order to work, condoms must be used correctly and must be used every time you have sex. It’s important to know, however, that they cannot completely protect you and your partner from some STDs, like herpes, syphilis, or human papilloma virus (HPV), the virus that causes genital warts and cervical cancer. Also, condoms can break, slip, or leak, especially if they are not put on and taken off properly. The only sure way to prevent pregnancy and STDs is to NOT to have sex and make sure you get regularly tested and treated for your current STD.
-      </p>
+  </div>
+
+  <div class="overlay-content" ng-show="tab === 6">
+    <p>
+      <h4> Q: </h4> Hi doctor, I’m Taylor. I just met a really cool guy yesterday at a party, and our relationship is progressing. One problem, I have STD, but I don’t want him to get it from me. How can we do it safely?
+    </p>
+    <p>
+      <h4> A: </h4> Hi Taylor, condoms are the only birth control that reduces your risk of both pregnancy and STDs. But, in order to work, condoms must be used correctly and must be used every time you have sex. It’s important to know, however, that they cannot completely protect you and your partner from some STDs, like herpes, syphilis, or human papilloma virus (HPV), the virus that causes genital warts and cervical cancer. Also, condoms can break, slip, or leak, especially if they are not put on and taken off properly. The only sure way to prevent pregnancy and STDs is to NOT to have sex and make sure you get regularly tested and treated for your current STD.
+    </p>
     <button class="close-btn" ng-click="tab = 0">Back</button>
-  </div><div class="overlay-content" ng-show="tab === 7">
-    <p><h4> Q: </h4>  Hi Doctor. Last night, I went to the bar, got drunk, and this morning, I woke up seeing a stranger in my bed. Apparently we had sex last night, without using any protection devices. I don’t know if they have an STD or not. What should I do now?
-      </p>
-    <p><h4> A: </h4> If you do not want to get pregnant, you can take a morning after pill. Since you don’t know about your partner’s health condition, you should go tested for STDs as soon as possible. If you have sex without using any protection device and your sexual partner has an STD, it is likely that the disease is transmitted.
-      </p>
+  </div>
+
+  <div class="overlay-content" ng-show="tab === 7">
+    <p>
+      <h4> Q: </h4> Hi Doctor. Last night, I went to the bar, got drunk, and this morning, I woke up seeing a stranger in my bed. Apparently we had sex last night, without using any protection devices. I don’t know if they have an STD or not. What should I do now?
+    </p>
+    <p>
+      <h4> A: </h4> If you do not want to get pregnant, you can take a morning after pill. Since you don’t know about your partner’s health condition, you should go tested for STDs as soon as possible. If you have sex without using any protection device and your sexual partner has an STD, it is likely that the disease is transmitted.
+    </p>
     <button class="close-btn" ng-click="tab = 0">Back</button>
   </div>
 </div><!-- end of container -->

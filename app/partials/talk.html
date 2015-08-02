@@ -17,8 +17,9 @@
 	
 	<div class="story-area">
 		<ul>
-			<li ng-repeat="story in stories">
-				<span>{{story.text}}</span>
+			<li ng-repeat="story in stories | orderBy:'createdAt':false">
+				<span id="date">{{story.createdAt | date:'medium'}}</span>
+				<span> • {{story.text}}</span>
 			</li>
 		</ul>
 	</div>
